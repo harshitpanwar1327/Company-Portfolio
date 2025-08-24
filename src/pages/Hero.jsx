@@ -1,57 +1,32 @@
 import React from 'react'
-import { ArrowRight } from "lucide-react"
 import a from '../assets/a.jpg'
-import b from '../assets/b.jpg'
 import c from '../assets/c.jpg'
-import { NavLink } from 'react-router-dom'
+import Navigation from '../components/Navigation'
+import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule'
+import Button from '../components/Button'
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-screen">
-      <div className="absolute">
-        <img src={a} alt="laptop" className="w-full h-full object-cover"/>
-      </div>
+    <>
+      <div className="relative w-screen h-[125vh] px-16 pb-8 bg-[url(/src/assets/a.jpg)] bg-cover bg-center overflow-hidden flex flex-col justify-between">
+        <Navigation />
 
-      <nav className="absolute top-0 w-full flex items-center justify-between px-10 py-6 text-white z-20">
-        <div className="flex space-x-8 font-medium">
-          <span className="text-lg ">CodeWeave</span>
-          <span className='flex flex-col h-[2rem] w-[2px] bg-white'></span>
-          <NavLink to={'/hero'}><h2 className="cursor-pointer">Hero</h2></NavLink>
-          <NavLink to={'/contact'}><h2 className="cursor-pointer">Contact</h2></NavLink>
+        <div className="flex flex-col gap-3 text-white">
+          <p className="tracking-wide mb-2">- Experienced Developer</p>
+          <h2 className='text-7xl'>Level Up Your</h2>
+          <h2 className='text-7xl'>Performance</h2>
+          <p className="text-lg mb-6 w-1/2">Improve your performance with personalized training plans guided by an experienced coach committed to your success.
+          </p>
+
+          <Button heading='Start now'/>
         </div>
-        <button className="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full backdrop-blur-sm">Get template</button>
-      </nav>
-
-
-      <div className="relative z-10 flex flex-col justify-center h-full px-10 text-white max-w-3xl">
-        <p className="tracking-wide mb-2">
-          -- EXPERIENCED COACH
-        </p>
-        <h1 className="text-5xl md:text-6xl font-bold mb-4">
-          Level Up Your <br /> Performance
-        </h1>
-        <p className="text-lg mb-6">
-          Improve your performance with personalized training plans
-          guided by an experienced coach committed to your success.
-        </p>
-
-        <div className="flex items-center space-x-6">
-          <button className="flex items-center gap-2 bg-white text-black pl-5 pr-1 py-1 rounded-full font-semibold hover:bg-gray-200">
-            Start now <ArrowRight size={45} className='bg-black text-white rounded-full p-3 ml-2'/>
-          </button>
-        </div>
-        <div className='flex flex-col h-[4rem] w-[1.5px] bg-white mt-6'>
-          <div className="flex text-white-400 ml-4 text-3xl space-x-2">
-            <span>★</span>
-            <span>★</span>
-            <span>★</span>
-            <span>★</span>
-            <span>★</span>
-          </div>
-          <p className="text-white text-sm ml-4 w-[15rem]">15+ Positive Client Reviews</p>
+        
+        <div className='flex flex-col px-4 py-1 border-l-2 border-white/40'>
+          <p className='text-3xl'>★ ★ ★ ★ ★</p>
+          <p className="text-white">15+ Positive Client Reviews</p>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
