@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { HashRouter as Router } from 'react-router-dom'
 import { ToastContainer, Bounce } from 'react-toastify'
+import Footer from './components/Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
         theme="light"
         transition={Bounce}
       />
+      <Footer />
     </Router>
   </StrictMode>,
 )
