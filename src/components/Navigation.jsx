@@ -4,7 +4,7 @@ import CodeIcon from '@mui/icons-material/Code'
 
 const Navigation = () => {
   return (
-    <div className='flex items-center gap-8 py-6 text-white text-lg'>
+    <div className='flex items-center gap-4 md:gap-8 py-6 text-white text-lg'>
       <p className="font-semibold flex items-center gap-1 cursor-pointer hover:opacity-70 transition-opacity duration-300 ease-in-out"><CodeIcon/> CodeWeave</p>
       <span className='text-2xl opacity-40'>|</span>
       <NavLink to="/hero">
