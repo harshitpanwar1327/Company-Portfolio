@@ -1,14 +1,16 @@
 import React from 'react'
-import a from '../assets/a.jpg'
-import c from '../assets/c.jpg'
 import Navigation from '../components/Navigation'
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule'
 import Button from '../components/Button'
+import Advertisement from '../section/Advertisement'
+import FAQ from '../section/FAQ'
+import Reviews from '../section/Reviews'
+import Products from '../section/Products'
 
 const Hero = () => {
   return (
     <>
-      <div className="relative w-screen h-[125vh] px-16 pb-8 bg-[url(/src/assets/a.jpg)] bg-cover bg-center overflow-hidden flex flex-col justify-between">
+      <div className="relative w-screen h-[125vh] px-16 pb-8 bg-[url(/src/assets/e.jpg)] bg-cover bg-center overflow-hidden flex flex-col justify-between">
         <Navigation />
 
         <div className="flex flex-col gap-3 text-white">
@@ -26,6 +28,10 @@ const Hero = () => {
           <p className="text-white">15+ Positive Client Reviews</p>
         </div>
       </div>
+      <Reviews />
+      <Products />
+      <FAQ />
+      <Advertisement />
     </>
   )
 }

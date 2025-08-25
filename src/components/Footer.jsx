@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className="bg-black text-gray-300 py-12 px-20 gap-12 flex justify-around border-t-1">
+    <div className="bg-black text-gray-300 py-12 px-20 gap-12 flex justify-around">
       <div>
         <h2 className="flex items-center gap-2 text-white font-semibold text-lg mb-4"><CodeIcon/>CodeWeave</h2>
         <p className="mb-4 max-w-xs text-gray-400">
