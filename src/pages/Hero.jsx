@@ -4,8 +4,11 @@ import Advertisement from '../section/Advertisement'
 import FAQ from '../section/FAQ'
 import Reviews from '../section/Reviews'
 import Products from '../section/Products'
+import About from '../section/About'
 import { ArrowRight } from "lucide-react"
 import { NavLink } from 'react-router-dom'
+import CountUp from "react-countup";
+import a from "../assets/c.jpg";
 
 const Hero = () => {
   return (
@@ -33,6 +36,62 @@ const Hero = () => {
         </div>
       </div>
 
+
+      {/* Counter section */}
+      <div className="my-20 py-20 bg-white container mx-auto px-6 md:px-12 lg:px-20">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-semibold text-black">
+              From beginners to seasoned pros, I create custom plans{" "}
+              <span className="text-gray-500">
+                tailored to help you unlock your full potential and succeed in
+                races.
+              </span>
+            </h2>
+          </div>
+
+          <div className="flex justify-center">
+            <img
+              src={a}
+              alt="Coach"
+              className="rounded-xl shadow-lg w-full max-w-md"
+            />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 text-center">
+          <div>
+            <h3 className="text-4xl font-bold text-black">
+              <CountUp end={15} duration={2} />+
+            </h3>
+            <p className="text-gray-600 mt-2">Years of experience</p>
+          </div>
+
+          <div>
+            <h3 className="text-4xl font-bold text-black">
+              <CountUp end={200} duration={2.5} />+
+            </h3>
+            <p className="text-gray-600 mt-2">Athletes coached</p>
+          </div>
+
+          <div>
+            <h3 className="text-4xl font-bold text-black">
+              <CountUp end={500} duration={3} />+
+            </h3>
+            <p className="text-gray-600 mt-2">Race strategies</p>
+          </div>
+
+          <div>
+            <h3 className="text-4xl font-bold text-black">
+              <CountUp end={10000} duration={3.5} separator="," />+
+            </h3>
+            <p className="text-gray-600 mt-2">Training hours</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <About/>
       <Reviews />
       <Products />
       <FAQ />
