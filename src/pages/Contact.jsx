@@ -1,6 +1,7 @@
 import React, {useRef} from 'react'
 import { Phone, Mail } from "lucide-react"
 import Navigation from '../components/Navigation'
+import Footer from '../components/Footer.jsx'
 import { ArrowRight } from "lucide-react"
 import Advertisement from '../section/Advertisement'
 import Reviews from '../section/Reviews.jsx'
@@ -76,6 +77,7 @@ const Contact = () => {
 
       <Reviews />
       <Advertisement />
+      <Footer />
     </>
   )
 }

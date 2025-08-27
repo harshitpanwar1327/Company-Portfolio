@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const Advertisement = () => {
   return (
-    <div className="h-[90vh] md:h-[50vh] lg:h-[90vh] bg-[url(/src/assets/q.jpg)] bg-cover bg-center flex flex-col items-center justify-center gap-8 text-center p-4">
+    <div className="h-[90vh] md:h-[50vh] lg:h-[90vh] bg-[url(/src/assets/advertisement.jpg)] bg-cover bg-center flex flex-col items-center justify-center gap-8 text-center p-4">
         <h2 className="text-4xl md:text-5xl lg:text-6xl text-white">Ready to Achieve Your Goals?</h2>
         <p className="md:text-xl">I’ll help you reach new heights and stay ahead of the competition.</p>
         <NavLink to={'/contact'}>

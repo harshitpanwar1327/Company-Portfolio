@@ -3,31 +3,37 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
 
 const faqs = [
-  
   {
-    question: "What kind of training plans do you offer?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem soluta ea maiores possimus suscipit architecto illo praesentium? Est, consequatur architecto."
+    question: "What is Data Block Solution?",
+    answer: "Data Block Solution (DBS) is our flagship security software that prevents unauthorized data transfers, blocks USB and Bluetooth sharing, and provides organizations with full control over data flow through monitoring and reporting."
   },
   {
-    question: "How do I know if I'm ready to start training?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem soluta ea maiores possimus suscipit architecto illo praes."
+    question: "What is your Real Estate Website project about?",
+    answer: "Our Real Estate Website is a modern property platform that allows users to explore property listings, connect with sellers, and manage inquiries through an integrated admin dashboard."
   },
   {
-    question: "Can I train with you if I'm not local?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem soluta ea maiores possimus suscipit architecto illo praesentium? Est, consequat."
+    question: "What services do you offer?",
+    answer: "We provide end-to-end digital solutions, including responsive Web Development, Windows Application Development, and UI/UX design using Figma."
   },
   {
-    question: "How often will I train, and how long are the sessions?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem soluta ea maiores possimus suscipit architecto illo praesentium? Est, consequatur architecto."
+    question: "Who are your solutions for?",
+    answer: "Our solutions cater to individuals, startups, and enterprises. Whether you need a secure enterprise tool like DBS, a property listing platform, or custom development services, we tailor our offerings to your needs."
   },
   {
-    question: "What equipment do I need to get started?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem soluta ea maiores possimus suscipit architecto illo praesentium? Est."
+    question: "Can I get a customized solution for my business?",
+    answer: "Yes, we offer fully customized software solutions in web, desktop, and design domains to ensure that your business requirements are met effectively."
+  },
+  {
+    question: "What makes your services different?",
+    answer: "Unlike generic agencies, we focus on blending security, scalability, and user experience. From robust desktop apps to visually stunning Figma prototypes, we ensure innovation at every step."
+  },
+  {
+    question: "Do you provide after-sales support?",
+    answer: "Absolutely. We provide ongoing support and maintenance for our software products, as well as assistance for web and design projects to ensure long-term reliability."
+  },
+  {
+    question: "How can I get started?",
+    answer: "You can reach out via our website, WhatsApp, or email. Based on your requirements, our team will provide you with a consultation, a tailored proposal, and next steps."
   }
 ];
 
@@ -39,10 +45,10 @@ const FAQ = () => {
   };
 
   return (
-    <div className="my-25 mx-16 p-6 bg-white text-black space-y-2">
+    <div className="py-30 py-30 px-4 md:px-12 lg:px-20 text-black flex flex-col gap-4">
       <p className="text-center text-gray-500">FAQ</p>
-      <h2 className="text-5xl font-semibold text-center mt-8 mb-20">Everything you need to know</h2>
-      <div className="space-y-14">
+      <h2 className="text-3xl md:text-5xl font-semibold text-center mb-8">Everything you need to know</h2>
+      <div className="flex flex-col gap-10">
         {faqs.map((faq, index) => (
           <div key={index} className="border-b border-gray-300 pb-4 cursor-pointer" onClick={() => toggleFAQ(index)}>
             <div className="flex justify-between items-center">

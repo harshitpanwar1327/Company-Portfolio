@@ -1,34 +1,33 @@
-import w from '../assets/w.jpg'
-import p1 from '../assets/p1.jpg'
-import p2 from '../assets/p2.jpg'
-import p3 from '../assets/p3.jpg'
-import p4 from '../assets/p4.jpg'
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react"
+import profile1 from '../assets/profile1.jpg'
+import profile2 from '../assets/profile2.jpg'
+import profile3 from '../assets/profile3.jpg'
+import profile4 from '../assets/profile4.jpg'
 
 const reviewsData = [
   {
     text: "With the right coaching, I was able to push past my limits. I couldn't have reached my goals without the guidance and support of an experienced coach.",
     name: "Aliyandro Navaro",
     role: "Cartel leader",
-    img: p1,
+    img: profile1,
   },
   {
     text: "I’ve learned more in the past few months with my coach than I did in years on my own. Their personalized approach made all the difference.",
     name: "Michael Smith",
     role: "Fitness Trainer",
-    img: p2,
+    img: profile2,
   },
   {
     text: "The difference between training on your own and with an expert coach is huge. I’ve never felt more confident and prepared for my races.",
     name: "Sophia Lee",
     role: "Nutritionist",
-    img: p3,
+    img: profile3,
   },
   {
     text: "Training with a coach who really knows the sport has been a game-changer. I’ve shaved minutes off my time and am in the best shape of my life.",
     name: "Alexandra Dadario",
     role: "Life Coach",
-    img: p4,
+    img: profile4,
   },
 ];
 
