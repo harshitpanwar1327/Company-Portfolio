@@ -6,29 +6,29 @@ import profile4 from '../assets/profile4.jpg'
 
 const reviewsData = [
   {
-    text: "With the right coaching, I was able to push past my limits. I couldn't have reached my goals without the guidance and support of an experienced coach.",
-    name: "Aliyandro Navaro",
-    role: "Cartel leader",
+    text: "The Data Block Solution completely transformed the way we manage security. It gave us full control over data transfers and helped us prevent risks we didn’t even know existed.",
+    name: "Rajesh Kumar",
+    role: "IT Manager",
     img: profile1,
   },
   {
-    text: "I’ve learned more in the past few months with my coach than I did in years on my own. Their personalized approach made all the difference.",
-    name: "Michael Smith",
-    role: "Fitness Trainer",
+    text: "We hired the team for web development, and the results exceeded expectations. Our new platform is modern, responsive, and perfectly aligned with our brand.",
+    name: "Daniel Wong",
+    role: "Startup Founder",
     img: profile2,
   },
   {
-    text: "The difference between training on your own and with an expert coach is huge. I’ve never felt more confident and prepared for my races.",
-    name: "Sophia Lee",
-    role: "Nutritionist",
+    text: "The Real Estate Website is sleek, fast, and easy to use. It has made listing and managing properties seamless for both agents and buyers.",
+    name: "Priya Mehta",
+    role: "Real Estate Consultant",
     img: profile3,
   },
   {
-    text: "Training with a coach who really knows the sport has been a game-changer. I’ve shaved minutes off my time and am in the best shape of my life.",
-    name: "Alexandra Dadario",
-    role: "Life Coach",
+    text: "Their expertise in Windows application development and Figma design helped us launch a product that was both powerful and user-friendly. Couldn’t have asked for better support!",
+    name: "Emily Carter",
+    role: "Product Manager",
     img: profile4,
-  },
+  }
 ];
 
 const Reviews = () => {
@@ -48,14 +48,12 @@ const Reviews = () => {
   const { text, name, role} = reviewsData[currentIndex];
 
   return (
-    <div className="flex flex-col h-[80vh] items-center justify-center py-30 px-6 bg-white text-center">
-      <p className="text-3xl text-yellow-500 mb-2">★★★★★</p>
+    <div className="flex flex-col items-center justify-center h-[90vh] md:h-[50vh] lg:h-[90vh] p-4 bg-white gap-2">
+      <p className="text-3xl text-yellow-500">★★★★★</p>
+      <p className="max-w-2xl text-2xl md:text-3xl text-center text-black transition-all duration-500">{text}</p>
+      <p className="text-gray-800 my-8">{name}, {role}</p>
 
-      <p className="max-w-2xl text-2xl md:text-3xl font-medium text-black mb-10 transition-all duration-500">{text}</p>
-
-      <p className="text-gray-800 mb-6">{name}, <span>{role}</span></p>
-
-      <div className="flex space-x-4">
+      <div className="flex gap-4">
         {reviewsData.map((review, index) => (
           <img
             key={index}
