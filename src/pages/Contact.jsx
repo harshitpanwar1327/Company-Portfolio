@@ -6,7 +6,8 @@ import { ArrowRight } from "lucide-react"
 import Advertisement from '../section/Advertisement'
 import Reviews from '../section/Reviews.jsx'
 import emailjs from '@emailjs/browser'
-import {toast} from 'react-toastify'
+import { toast } from 'react-toastify'
+import { Element } from 'react-scroll'
 
 const Contact = () => {
   const form = useRef();
@@ -33,7 +34,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className='relative w-screen px-8 md:px-16 pb-8 bg-black overflow-hidden flex flex-col justify-between gap-16'>
+      <Element name='contact' className='relative w-screen px-4 md:px-12 lg:px-20 pb-8 bg-black overflow-hidden flex flex-col justify-between gap-16'>
         <Navigation />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 text-white">
@@ -73,7 +74,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-      </div>
+      </Element>
 
       <Reviews />
       <Advertisement />

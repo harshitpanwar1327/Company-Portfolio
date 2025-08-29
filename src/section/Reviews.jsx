@@ -3,6 +3,7 @@ import profile1 from '../assets/profile1.jpg'
 import profile2 from '../assets/profile2.jpg'
 import profile3 from '../assets/profile3.jpg'
 import profile4 from '../assets/profile4.jpg'
+import { Element } from 'react-scroll'
 
 const reviewsData = [
   {
@@ -48,7 +49,7 @@ const Reviews = () => {
   const { text, name, role} = reviewsData[currentIndex];
 
   return (
-    <div className="flex flex-col items-center justify-center h-[90vh] md:h-[50vh] lg:h-[90vh] p-4 bg-white gap-2">
+    <Element name="reviews" className="flex flex-col items-center justify-center h-[90vh] md:h-[50vh] lg:h-[90vh] p-4 bg-white gap-2">
       <p className="text-3xl text-yellow-500">★★★★★</p>
       <p className="max-w-2xl text-2xl md:text-3xl text-center text-black transition-all duration-500">{text}</p>
       <p className="text-gray-800 my-8">{name}, {role}</p>
@@ -66,7 +67,7 @@ const Reviews = () => {
           />
         ))}
       </div>
-    </div>
+    </Element>
   )
 }
 

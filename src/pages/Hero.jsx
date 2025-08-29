@@ -7,7 +7,8 @@ import Reviews from '../section/Reviews'
 import Products from '../section/Products'
 import About from '../section/About'
 import { ArrowRight } from "lucide-react"
-import { NavLink } from 'react-router-dom'
+import { useNavigate, useLocation } from "react-router-dom"
+import { scroller } from "react-scroll"
 import CountUp from "react-countup"
 import { useInView } from "react-intersection-observer"
 import hero2 from "../assets/hero2.jpg"
@@ -15,9 +16,7 @@ import { motion } from 'motion/react'
 
 const Hero = () => {
   const text = "Innovating Secure & \nSmart Digital \nSolutions";
-
   const letters = text.split("");
-
   const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
@@ -28,7 +27,6 @@ const Hero = () => {
       },
     }),
   };
-
   const child = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -38,6 +36,34 @@ const Hero = () => {
     },
   };
 
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleScroll = (route, section) => {
+    if (location.pathname !== route) {
+      navigate(route);
+
+      setTimeout(() => {
+        if (section) {
+          scroller.scrollTo(section, {
+            smooth: true,
+            duration: 600,
+            offset: -80,
+          });
+        }
+      }, 200);
+    } else {
+      if (section) {
+        scroller.scrollTo(section, {
+          smooth: true,
+          duration: 600,
+          offset: -80,
+        });
+      }
+    }
+    setOpenNav(false);
+  };
+
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.7,
@@ -45,7 +71,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="w-screen px-4 md:px-12 lg:px-20 pb-8 bg-[url(/src/assets/hero.jpg)] bg-cover bg-center flex flex-col justify-between gap-16">
+      <div className="w-screen min-h-[100vh] px-4 md:px-12 lg:px-20 pb-8 bg-[url(/src/assets/hero.jpg)] bg-cover bg-center flex flex-col justify-between gap-16">
         <Navigation />
 
         <div className="flex flex-col gap-3 text-white">
@@ -67,16 +93,14 @@ const Hero = () => {
             transition={{type: 'spring', stiffness: 100, damping: 15, delay: 1}}
           >From enterprise-grade security to modern web platforms, we craft solutions that power businesses, protect data, and inspire growth.</motion.p>
 
-          <NavLink to={'/contact'}>
-            <motion.button className="self-start flex items-center bg-white p-1 rounded-full font-semibold hover:bg-gray-200 group"
-              initial={{opacity: 0, y: 20}}
-              animate={{opacity: 1, y: 0}}
-              transition={{type: 'spring', stiffness: 100, damping: 15, delay: 1.2}}
-            >
-              <p className='text-black px-3'>Start now</p>
-              <ArrowRight size={40} className='bg-black text-white rounded-full p-2 -rotate-45 group-hover:rotate-0 transition duration-300 ease-in-out'/>
-            </motion.button>
-          </NavLink>
+          <motion.button onClick={() => handleScroll("/contact", "contact")} className="self-start flex items-center bg-white p-1 rounded-full font-semibold hover:bg-gray-200 group"
+            initial={{opacity: 0, y: 20}}
+            animate={{opacity: 1, y: 0}}
+            transition={{type: 'spring', stiffness: 100, damping: 15, delay: 1.2}}
+          >
+            <p className='text-black px-3'>Start now</p>
+            <ArrowRight size={40} className='bg-black text-white rounded-full p-2 -rotate-45 group-hover:rotate-0 transition duration-300 ease-in-out'/>
+          </motion.button>
         </div>
         
         <motion.div className='flex flex-col px-4 py-1 border-l-2 border-white/40'

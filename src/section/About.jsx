@@ -3,6 +3,7 @@ import { useRef } from "react";
 import about1 from '../assets/about1.jpg'
 import about2 from '../assets/about2.jpg'
 import about3 from '../assets/about3.jpg'
+import { Element } from 'react-scroll'
 
 const About = () => {
   const ref = useRef(null);
@@ -27,7 +28,7 @@ const About = () => {
   const img3Opacity = useTransform(scrollYProgress, [0.66, 0.9, 1], [0, 1, 1]);
 
   return (
-    <div ref={ref} className="bg-black min-h-[300vh]">
+    <Element name="about" ref={ref} className="bg-black min-h-[300vh]">
 
       {/* Desktop */}
       <section className="sticky top-0 h-screen hidden md:flex flex-row items-center px-6">
@@ -105,7 +106,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

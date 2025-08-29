@@ -1,8 +1,38 @@
 import React from 'react'
 import CodeIcon from '@mui/icons-material/Code'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-scroll'
+import { useNavigate, useLocation } from "react-router-dom"
+import { scroller } from "react-scroll"
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleScroll = (route, section) => {
+    if (location.pathname !== route) {
+      navigate(route);
+
+      setTimeout(() => {
+        if (section) {
+          scroller.scrollTo(section, {
+            smooth: true,
+            duration: 600,
+            offset: -80,
+          });
+        }
+      }, 200);
+    } else {
+      if (section) {
+        scroller.scrollTo(section, {
+          smooth: true,
+          duration: 600,
+          offset: -80,
+        });
+      }
+    }
+    setOpenNav(false);
+  };
+
   return (
     <div className="bg-black p-8 md:p-16 gap-12 flex flex-col md:flex-row justify-between">
       <div className='flex flex-col gap-6'>
@@ -13,10 +43,10 @@ const Footer = () => {
       <div className='grid grid-cols-2 gap-20 text-white/60'>
         <div className='flex flex-col gap-2'>
           <h3 className="text-white font-semibold">Sections</h3>
-          <NavLink to={'/hero'} className='hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-4'>About</NavLink>
-          <NavLink to={'/hero'} className='hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-7'>Projects</NavLink>
-          <NavLink to={'/hero'} className='hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-10'>Reviews</NavLink>
-          <NavLink to={'/contact'} className='hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-13'>Contact</NavLink>
+          <p onClick={() => handleScroll("/hero", "about")} className='cursor-pointer hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-4'>About</p>
+          <p onClick={() => handleScroll("/hero", "products")} className='cursor-pointer hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-7'>Products</p>
+          <Link to='reviews' className='cursor-pointer hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-10'>Reviews</Link>
+          <p onClick={() => handleScroll("/contact", "contact")} className='cursor-pointer hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-13'>Contact</p>
         </div>
 
         <div className='flex flex-col gap-2 text-white/60'>
