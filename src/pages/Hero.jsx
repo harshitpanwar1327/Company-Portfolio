@@ -61,7 +61,6 @@ const Hero = () => {
         });
       }
     }
-    setOpenNav(false);
   };
 
   const { ref, inView } = useInView({
@@ -71,7 +70,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="w-screen min-h-[100vh] px-4 md:px-12 lg:px-20 pb-8 bg-[url(/src/assets/hero.jpg)] bg-cover bg-center flex flex-col justify-between gap-16">
+      <div className="w-screen min-h-[100vh] lg:min-h-[120vh] px-4 md:px-12 lg:px-20 pb-8 bg-[url(/src/assets/hero.jpg)] bg-cover bg-center flex flex-col justify-between gap-16">
         <Navigation />
 
         <div className="flex flex-col gap-3 text-white">
@@ -113,8 +112,8 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <div className="bg-white py-20 px-4 md:px-12 lg:px-20 flex flex-col gap-16" ref={ref}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div className="bg-white min-h-[90vh] py-20 px-4 md:px-12 lg:px-20 flex flex-col justify-center items-center gap-16" ref={ref}>
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-16">
           <h2 className="text-2xl lg:text-3xl font-semibold text-black">
             From secure data solutions to modern web platforms, we build innovative digital products{" "}
             <span className="text-gray-500">
@@ -124,7 +123,7 @@ const Hero = () => {
           <img src={hero2} alt="Coach" className="rounded-xl shadow-lg w-full max-w-md"/>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-16 text-center">
           <div>
             <h3 className="text-4xl font-bold text-black">{inView && <CountUp end={1} duration={2} />}+</h3>
             <p className="text-gray-600 mt-2">Years of Innovation</p>
@@ -144,9 +143,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <About/>
-      <Reviews />
       <Products />
+      <Reviews />
+      <About/>
       <FAQ />
       <Advertisement />
       <Footer />

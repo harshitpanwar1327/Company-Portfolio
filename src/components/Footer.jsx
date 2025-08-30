@@ -30,7 +30,6 @@ const Footer = () => {
         });
       }
     }
-    setOpenNav(false);
   };
 
   return (

@@ -21,7 +21,6 @@ const Navigation = () => {
           scroller.scrollTo(section, {
             smooth: true,
             duration: 600,
-            offset: -80,
           });
         }
       }, 200);
@@ -30,7 +29,6 @@ const Navigation = () => {
         scroller.scrollTo(section, {
           smooth: true,
           duration: 600,
-          offset: -80,
         });
       }
     }
@@ -57,7 +55,7 @@ const Navigation = () => {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: "-100%", opacity: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="flex flex-col items-center gap-8 p-8 fixed top-0 left-0 text-black bg-white w-full h-screen z-50"
+            className="flex flex-col items-center gap-8 p-8 fixed top-0 left-0 text-black bg-white w-full z-50"
           >
             <div className="flex justify-between items-center w-full border-b border-gray-300 pb-4">
               <p className="font-semibold"><CodeIcon /> CodeWeave</p>

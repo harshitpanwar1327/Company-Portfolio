@@ -51,7 +51,6 @@ const Advertisement = () => {
         });
       }
     }
-    setOpenNav(false);
   };
 
   return (
