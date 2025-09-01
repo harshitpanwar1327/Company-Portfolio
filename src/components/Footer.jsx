@@ -51,9 +51,9 @@ const Footer = () => {
         <div className='flex flex-col gap-2 text-white/60'>
           <h3 className="text-white font-semibold">Socials</h3>
           <a href="https://github.com/harshitpanwar1327/" target='_blank' className='hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-4'>Github</a>
-          <a href="https://www.linkedin.com/in/harshit-panwar-98335a264/" target='_blank' className='hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-10'>Linkdin</a>
+          <a href="https://www.linkedin.com/in/harshit-panwar-98335a264/" target='_blank' className='hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-7'>Linkdin</a>
           <a href="mailto:codeweave.site@gmail.com" target='_blank' rel="noopener noreferrer" className='hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-10'>Gmail</a>
-          <a href="https://wa.me/918595994381" target='_blank' rel="noopener noreferrer" className='hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-10'>Whatsapp</a>
+          <a href="https://wa.me/918595994381" target='_blank' rel="noopener noreferrer" className='hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-13'>Whatsapp</a>
         </div>
       </div>
     </div>
