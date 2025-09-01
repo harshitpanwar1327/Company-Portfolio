@@ -48,7 +48,7 @@ const Products = () => {
               className="bg-white rounded-2xl shadow-xl p-6 flex flex-col lg:flex-row items-center gap-10"
               style={{ zIndex: index }}
             >
-              <img src={project.image} alt="Img" className='w-full lg:w-1/2 rounded-xl' />
+              <video src={project.video} controls loop autoPlay muted className='w-full lg:w-1/2 rounded-xl' />
 
               <div className='text-black flex flex-col gap-10'>
                 <h3 className='text-3xl font-semibold'>{project.title}</h3>
