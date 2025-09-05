@@ -28,7 +28,7 @@ const About = () => {
 
           <div className='flex flex-col items-center text-center gap-4 bg-neutral-900 p-8 rounded-2xl shadow-lg'>
             <img src={cofounderImg} alt="Co-Founder" className='w-32 h-32 object-cover rounded-full border-4 border-white/20' />
-            <h3 className='text-xl font-bold'>Co-Founder Name</h3>
+            <h3 className='text-xl font-bold'>Ayush Choudhary</h3>
             <p className='text-white/70 italic'>“We started Code Weave with the vision of creating a collaborative platform where innovation thrives, and every project carries a meaningful impact.”</p>
           </div>
         </div>
