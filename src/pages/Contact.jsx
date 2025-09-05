@@ -40,7 +40,8 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 text-white">
           <div className='flex flex-col gap-8'>
             <h2 className='text-5xl md:text-6xl font-semibold md:w-1/2'>Let's get in touch</h2>
-            <p className='text-justify'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora soluta quos quae nihil vel temporibus similique ea deleniti natus saepe, nemo.</p>
+            <p className='text-justify'>Whether you have a question, a project in mind, or just want to say hello, we’d love to hear from you. 
+            Our team is always ready to discuss new opportunities, provide support, and explore how we can work together to bring your ideas to life. Feel free to reach out through the form or the contact details below.</p>
             <hr className='text-white/50'/>
             <p className='flex items-center gap-3'><Phone className='w-5 h-5'/>+91 8595994381, +91 9311201990</p>
             <p className='flex items-center gap-3'><Mail className='w-5 h-5'/>codeweave.site@gmail.com</p>

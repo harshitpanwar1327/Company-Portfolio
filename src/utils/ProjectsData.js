@@ -8,7 +8,7 @@ export const ProjectsData = [
         title: "Data Block Solution",
         description: "System software to prevent data transfer and restrict unauthorized activities with real-time monitoring.",
         video: DBS,
-        link: ""
+        link: 'https://www.protectionmark.com'
     },
     {
         id: 2,
@@ -22,6 +22,6 @@ export const ProjectsData = [
         title: "Daily Spend",
         description: "A modern and responsive landing page for the Daily Spend app, showcasing features for tracking daily expenses with clarity and simplicity.",
         video: DailySpend,
-        link: ""
+        link: "https://dailyspend.in"
     }
 ]

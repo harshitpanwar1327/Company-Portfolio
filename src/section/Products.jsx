@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight } from "lucide-react"
 import { useNavigate, useLocation } from "react-router-dom"
 import { scroller } from "react-scroll"
+import IosShareRoundedIcon from '@mui/icons-material/IosShareRounded'
 
 const Products = () => {
   const navigate = useNavigate();
@@ -52,6 +53,9 @@ const Products = () => {
 
               <div className='text-black flex flex-col gap-10'>
                 <h3 className='text-3xl font-semibold'>{project.title}</h3>
+                {project.link &&
+                  <a href={project.link} target='_blank' className='text-blue-500'>Visit official website <IosShareRoundedIcon sx={{fontSize: '18px'}}/></a>
+                }
                 <p>{project.description}</p>
                 <motion.button
                   onClick={() => handleScroll("/contact", "contact")}
