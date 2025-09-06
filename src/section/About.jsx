@@ -12,7 +12,7 @@ const About = () => {
       <div className='max-w-4xl text-center space-y-6'>
         <h2 className='text-4xl md:text-5xl font-bold'>About Code Weave</h2>
         <p className='text-lg text-white/80 leading-relaxed'>
-          Founded in 2022, <span className='font-semibold text-white'>Code Weave</span> was born with a single vision — to empower businesses and individuals through innovative technology solutions. Our motivation stems from a belief that great ideas deserve more than just execution; they deserve passion, precision, and persistence. Over the years, we’ve built a culture where creativity meets functionality, enabling us to deliver impactful solutions that shape the digital future.
+          Founded in 2024, <span className='font-semibold text-white'>Code Weave</span> was born with a single vision — to empower businesses and individuals through innovative technology solutions. Our motivation stems from a belief that great ideas deserve more than just execution; they deserve passion, precision, and persistence. Over the years, we’ve built a culture where creativity meets functionality, enabling us to deliver impactful solutions that shape the digital future.
         </p>
       </div>
 
