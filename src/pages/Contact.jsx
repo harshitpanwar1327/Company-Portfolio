@@ -26,7 +26,7 @@ const Contact = () => {
           form.current.reset();
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          console.log('FAILED...', error);
           toast.error("Email not sent!");
         },
       );
@@ -39,7 +39,7 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 text-white">
           <div className='flex flex-col gap-8'>
-            <h2 className='text-5xl md:text-6xl font-semibold md:w-1/2'>Let's get in touch</h2>
+            <h2 className='text-5xl md:text-6xl font-semibold'>Let's get in touch</h2>
             <p className='text-justify'>Whether you have a question, a project in mind, or just want to say hello, we’d love to hear from you. 
             Our team is always ready to discuss new opportunities, provide support, and explore how we can work together to bring your ideas to life. Feel free to reach out through the form or the contact details below.</p>
             <hr className='text-white/50'/>
