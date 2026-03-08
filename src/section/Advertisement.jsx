@@ -54,7 +54,7 @@ const Advertisement = () => {
   };
 
   return (
-    <div className="h-[90vh] md:h-[50vh] lg:h-[90vh] bg-[url(/src/assets/advertisement.jpg)] bg-cover bg-center flex flex-col items-center justify-center gap-8 text-center p-4">
+    <div className="h-[90vh] md:h-[50vh] lg:h-[90vh] bg-[url(/src/assets/advertisement.webp)] bg-cover bg-center flex flex-col items-center justify-center gap-8 text-center p-4">
       <motion.h2 className="text-4xl md:text-5xl lg:text-6xl text-white"
         variants={container}
         initial="hidden"

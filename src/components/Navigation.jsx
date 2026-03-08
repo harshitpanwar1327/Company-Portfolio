@@ -37,13 +37,13 @@ const Navigation = () => {
 
   return (
     <div className="flex items-center gap-4 md:gap-8 py-6 text-white text-lg">
-      <NavLink to="/hero" className="font-semibold flex items-center gap-1 cursor-pointer hover:opacity-70 transition-opacity duration-300 ease-in-out"><CodeIcon /> CodeWeave</NavLink>
+      <NavLink to="/" className="font-semibold flex items-center gap-1 cursor-pointer hover:opacity-70 transition-opacity duration-300 ease-in-out"><CodeIcon /> CodeWeave</NavLink>
 
       <span className="text-2xl opacity-40 hidden md:inline">|</span>
 
-      <h2 onClick={() => handleScroll("/hero", "products")} className="hidden md:block relative py-2 cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Products</h2>
+      <h2 onClick={() => handleScroll("/", "products")} className="hidden md:block relative py-2 cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Products</h2>
       <Link to="reviews" className="hidden md:block relative py-2 cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Reviews</Link>
-      <h2 onClick={() => handleScroll("/hero", "about")} className="hidden md:block relative py-2 cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About</h2>
+      <h2 onClick={() => handleScroll("/", "about")} className="hidden md:block relative py-2 cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About</h2>
       <h2 onClick={() => handleScroll("/contact", "contact")} className="hidden md:block relative py-2 cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Contact</h2>
 
       <MenuIcon className="absolute right-5 md:!hidden cursor-pointer" onClick={() => setOpenNav(true)}/>
@@ -62,9 +62,9 @@ const Navigation = () => {
               <CloseIcon className="cursor-pointer" onClick={() => setOpenNav(false)}/>
             </div>
 
-            <h2 onClick={() => handleScroll("/hero", "products")}>Products</h2>
+            <h2 onClick={() => handleScroll("/", "products")}>Products</h2>
             <Link to="reviews">Reviews</Link>
-            <h2 onClick={() => handleScroll("/hero", "about")}>About</h2>
+            <h2 onClick={() => handleScroll("/", "about")}>About</h2>
             <h2 onClick={() => handleScroll("/contact", "contact")}>Contact</h2>
           </motion.div>
         )}

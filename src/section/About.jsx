@@ -1,8 +1,8 @@
 import React from 'react'
 import { Element } from 'react-scroll'
-import founderImg from '../assets/about1.jpg'
-import cofounderImg from '../assets/about2.jpg'
-import productEngineerImg from '../assets/about3.png'
+import founderImg from '../assets/about1.webp'
+import cofounderImg from '../assets/about2.webp'
+import productEngineerImg from '../assets/about3.webp'
 
 const About = () => {
   return (
@@ -19,19 +19,19 @@ const About = () => {
 
         <div className='flex flex-col lg:flex-row flex-wrap justify-center items-stretch gap-12'>
           <div className='lg:w-[45%] flex flex-col items-center text-center gap-4 bg-neutral-900 p-8 rounded-2xl shadow-lg'>
-            <img src={founderImg} alt="Founder" className='w-32 h-32 object-cover rounded-full border-4 border-white/20' />
+            <img src={founderImg} alt="Founder" loading='lazy' className='w-32 h-32 object-cover rounded-full border-4 border-white/20' />
             <h3 className='text-xl font-bold'>Harshit Panwar (CEO)</h3>
             <p className='text-white/70 italic'>“At CodeWeave, our mission is to bridge the gap between ideas and execution. We believe technology should empower, inspire, and make life simpler.”</p>
           </div>
 
           <div className='lg:w-[45%] flex flex-col items-center text-center gap-4 bg-neutral-900 p-8 rounded-2xl shadow-lg'>
-            <img src={cofounderImg} alt="Co-Founder" className='w-32 h-32 object-cover rounded-full border-4 border-white/20' />
+            <img src={cofounderImg} alt="Co-Founder" loading='lazy' className='w-32 h-32 object-cover rounded-full border-4 border-white/20' />
             <h3 className='text-xl font-bold'>Ayush Choudhary (CTO)</h3>
             <p className='text-white/70 italic'>“We started CodeWeave with the vision of creating a collaborative platform where innovation thrives, and every project carries a meaningful impact.”</p>
           </div>
 
           <div className='lg:w-[45%] flex flex-col items-center text-center gap-4 bg-neutral-900 p-8 rounded-2xl shadow-lg'>
-            <img src={productEngineerImg} alt="Founder" className='w-32 h-32 object-cover rounded-full border-4 border-white/20' />
+            <img src={productEngineerImg} alt="Founder" loading='lazy' className='w-32 h-32 object-cover rounded-full border-4 border-white/20' />
             <h3 className='text-xl font-bold'>Shashank Panwar (Product Engineer)</h3>
             <p className='text-white/70 italic'>“Being part of CodeWeave means building solutions with purpose. I focus on crafting reliable, scalable systems that not only meet today’s needs but are ready for tomorrow’s challenges.”</p>
           </div>

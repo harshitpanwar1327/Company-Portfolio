@@ -6,14 +6,13 @@ import Contact from './pages/Contact.jsx'
 function App() {
 
   return (
-    <>
+    <main>
       <Routes>
         <Route path='/' element={<Hero />}/>
-        <Route path='/hero' element={<Hero />}/>
         <Route path='/contact' element={<Contact />}/>
         <Route path='*' element={<Navigate to='/'/>}/>
       </Routes>
-    </>
+    </main>
   )
 }
 

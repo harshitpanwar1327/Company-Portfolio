@@ -1,7 +1,7 @@
-import QweRty from '../assets/QweRty.mov'
-import DBS from '../assets/DBS.mov'
-import RealEstate from '../assets/RealEstate.mov'
-import DailySpend from '../assets/DailySpend.mov'
+import QweRty from '../assets/QweRty.mp4'
+import DBS from '../assets/DBS.mp4'
+import RealEstate from '../assets/RealEstate.mp4'
+import DailySpend from '../assets/DailySpend.mp4'
 
 export const ProjectsData = [
     {
