@@ -1,4 +1,3 @@
-import React from 'react'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer.jsx'
 import Advertisement from '../section/Advertisement'
@@ -13,10 +12,10 @@ import CountUp from "react-countup"
 import { useInView } from "react-intersection-observer"
 import hero2 from "../assets/hero2.webp"
 import { Helmet } from 'react-helmet-async'
-import { motion } from "framer-motion"
+import { motion as Motion } from 'framer-motion'
 
 const Hero = () => {
-  const text = "Innovating Secure & \nSmart Digital \nSolutions";
+  const text = "We Build Scalable SaaS \nProducts & Modern \nWeb Applications";
   const letters = text.split("");
   const container = {
     hidden: { opacity: 0 },
@@ -71,51 +70,55 @@ const Hero = () => {
 
   return (
     <>
-    <Helmet>
-      <title>CodeWeave | Web Applications & SaaS Development</title>
-      <meta name="description" content="CodeWeave builds websites, SaaS platforms and admin dashboards for businesses." />
-    </Helmet>
+      <Helmet>
+        <title>CodeWeave | SaaS Development Agency for Startups</title>
+        <meta name="description" content="CodeWeave builds scalable SaaS products, ERP systems, and custom web applications. Creators of ClassEzo, Daily Spend, and QweRty." />
+        <meta name="keywords" content="SaaS development, ERP software, web app development, startup tech partner" />
+        <meta property="og:title" content="CodeWeave | SaaS Development Agency" />
+        <meta property="og:description" content="We build scalable SaaS and web applications for startups and businesses." />
+        <meta property="og:url" content="https://codeweave.in/" />
+      </Helmet>
     
       <div className="w-screen min-h-[100vh] lg:min-h-[120vh] px-4 md:px-12 lg:px-20 pb-8 bg-[url(/src/assets/hero.webp)] bg-cover bg-center flex flex-col justify-between gap-16">
         <Navigation />
 
         <div className="flex flex-col gap-3 text-white">
-          <motion.h2
-            className="text-4xl md:text-5xl lg:text-6xl font-semibold"
+          <Motion.h2
+            className="text-3xl md:text-5xl lg:text-6xl font-semibold"
             variants={container}
             initial="hidden"
             animate="visible"
           >
             {letters.map((letter, index) => (
-              <motion.span key={index} variants={child}>
+              <Motion.span key={index} variants={child}>
                 {letter === " " ? "\u00A0" : letter === "\n" ? <br /> : letter}
-              </motion.span>
+              </Motion.span>
             ))}
-          </motion.h2>
-          <motion.p className="text-lg my-6 md:w-2/3 lg:w-1/2"
+          </Motion.h2>
+          <Motion.p className="text-lg my-6 md:w-2/3 lg:w-1/2"
             initial={{opacity: 0, y: 20}}
             animate={{opacity: 1, y: 0}}
             transition={{type: 'spring', stiffness: 100, damping: 15, delay: 1}}
-          >From enterprise-grade security to modern web platforms, we craft solutions that power businesses, protect data, and inspire growth.</motion.p>
+          >We help startups and businesses turn ideas into powerful digital products — from SaaS platforms and ERP systems to high-performance websites. Creators of ClassEzo, Daily Spend, and QweRty.</Motion.p>
 
-          <motion.button onClick={() => handleScroll("/contact", "contact")} className="self-start flex items-center bg-white p-1 rounded-full font-semibold hover:bg-gray-200 group"
+          <Motion.button onClick={() => handleScroll("/contact", "contact")} className="self-start flex items-center bg-white p-1 rounded-full font-semibold hover:bg-gray-200 group"
             initial={{opacity: 0, y: 20}}
             animate={{opacity: 1, y: 0}}
             transition={{type: 'spring', stiffness: 100, damping: 15, delay: 1.2}}
           >
             <p className='text-black px-3'>Start now</p>
             <ArrowRight size={40} className='bg-black text-white rounded-full p-2 -rotate-45 group-hover:rotate-0 transition duration-300 ease-in-out'/>
-          </motion.button>
+          </Motion.button>
         </div>
         
-        <motion.div className='flex flex-col px-4 py-1 border-l-2 border-white/40'
+        <Motion.div className='flex flex-col px-4 py-1 border-l-2 border-white/40'
           initial={{opacity: 0, y: 50}}
           animate={{opacity: 1, y: 0}}
           transition={{type: 'spring', stiffness: 100, damping: 15, delay: 1.4}}
         >
           <p className='text-3xl'>★ ★ ★ ★ ★</p>
           <p className="text-white">15+ Positive Client Reviews</p>
-        </motion.div>
+        </Motion.div>
       </div>
 
       <div className="min-h-[90vh] py-20 px-4 md:px-12 lg:px-20 flex flex-col justify-center items-center gap-16" ref={ref}>

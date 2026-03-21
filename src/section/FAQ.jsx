@@ -1,39 +1,47 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion as Motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "What is Data Block Solution?",
-    answer: "Data Block Solution (DBS) is our flagship security software that prevents unauthorized data transfers, blocks USB and Bluetooth sharing, and provides organizations with full control over data flow through monitoring and reporting."
+    question: "What services does CodeWeave provide?",
+    answer: "CodeWeave specializes in building scalable SaaS products, ERP systems, and custom web applications. We also design and develop modern, high-performance websites for businesses and startups."
   },
   {
-    question: "What is your Real Estate Website project about?",
-    answer: "Our Real Estate Website is a modern property platform that allows users to explore property listings, connect with sellers, and manage inquiries through an integrated admin dashboard."
+    question: "Do you work with startups or only established businesses?",
+    answer: "We work with both startups and established businesses. Whether you’re validating an idea or scaling an existing product, we help you build reliable and scalable solutions."
   },
   {
-    question: "What services do you offer?",
-    answer: "We provide end-to-end digital solutions, including responsive Web Development, Windows Application Development, and UI/UX design using Figma."
+    question: "Can you build a complete SaaS product from scratch?",
+    answer: "Yes, we can handle everything from idea validation, UI/UX design, development, deployment, to scaling. We act as your complete tech partner."
   },
   {
-    question: "Who are your solutions for?",
-    answer: "Our solutions cater to individuals, startups, and enterprises. Whether you need a secure enterprise tool like DBS, a property listing platform, or custom development services, we tailor our offerings to your needs."
+    question: "How long does it take to build a project?",
+    answer: "Project timelines depend on complexity. A simple website may take 1–2 weeks, while a full SaaS platform or ERP system can take 4–12 weeks or more."
   },
   {
-    question: "Can I get a customized solution for my business?",
-    answer: "Yes, we offer fully customized software solutions in web, desktop, and design domains to ensure that your business requirements are met effectively."
+    question: "Do you provide ongoing support and maintenance?",
+    answer: "Yes, we offer ongoing support, maintenance, and feature upgrades to ensure your product continues to perform and scale smoothly."
   },
   {
-    question: "What makes your services different?",
-    answer: "Unlike generic agencies, we focus on blending security, scalability, and user experience. From robust desktop apps to visually stunning Figma prototypes, we ensure innovation at every step."
+    question: "What technologies do you use?",
+    answer: "We use modern technologies like React, Node.js, and scalable cloud infrastructure to build fast, secure, and reliable applications."
   },
   {
-    question: "Do you provide after-sales support?",
-    answer: "Absolutely. We provide ongoing support and maintenance for our software products, as well as assistance for web and design projects to ensure long-term reliability."
+    question: "Can you improve or redesign an existing website or product?",
+    answer: "Absolutely. We can redesign your UI/UX, optimize performance, fix issues, and add new features to your existing product."
   },
   {
-    question: "How can I get started?",
-    answer: "You can reach out via our website, WhatsApp, or email. Based on your requirements, our team will provide you with a consultation, a tailored proposal, and next steps."
+    question: "How much does a project cost?",
+    answer: "Pricing depends on the scope and complexity of the project. We offer flexible pricing based on your requirements and budget."
+  },
+  {
+    question: "Will my website or SaaS product be SEO-friendly?",
+    answer: "Yes, we follow best practices for SEO, performance optimization, and accessibility to ensure your product ranks well and performs efficiently."
+  },
+  {
+    question: "How do we get started with CodeWeave?",
+    answer: "You can contact us through our website or schedule a call. We’ll discuss your idea, requirements, and suggest the best approach to build your product."
   }
 ];
 
@@ -45,7 +53,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="py-30 py-30 px-4 md:px-12 lg:px-20 text-black flex flex-col gap-4">
+    <div className="py-30 px-4 md:px-12 lg:px-20 text-black flex flex-col gap-4">
       <p className="text-center text-gray-500">FAQ</p>
       <h2 className="text-3xl md:text-5xl font-semibold text-center mb-8">Everything you need to know</h2>
       <div className="flex flex-col gap-10">
@@ -61,7 +69,7 @@ const FAQ = () => {
             </div>
             <AnimatePresence>
               {openIndex === index && (
-                <motion.p
+                <Motion.p
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
@@ -69,7 +77,7 @@ const FAQ = () => {
                   className="mt-2 text-gray-600"
                 >
                   {faq.answer}
-                </motion.p>
+                </Motion.p>
               )}
             </AnimatePresence>
           </div>

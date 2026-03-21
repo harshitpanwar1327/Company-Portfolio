@@ -8,6 +8,7 @@ import Reviews from '../section/Reviews.jsx'
 import emailjs from '@emailjs/browser'
 import { toast } from 'react-toastify'
 import { Element } from 'react-scroll'
+import { Helmet } from 'react-helmet-async'
 
 const Contact = () => {
   const form = useRef();
@@ -45,6 +46,12 @@ const Contact = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Contact CodeWeave | Start Your SaaS Project</title>
+        <meta name="description" content="Contact CodeWeave to build your SaaS product, ERP system, or custom web application. Let's turn your idea into reality." />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
       <Element name='contact' className='relative w-screen px-4 md:px-12 lg:px-20 pb-8 bg-black overflow-hidden flex flex-col justify-between gap-16'>
         <Navigation />
 
@@ -54,8 +61,15 @@ const Contact = () => {
             <p className='text-justify'>Whether you have a question, a project in mind, or just want to say hello, we’d love to hear from you. 
             Our team is always ready to discuss new opportunities, provide support, and explore how we can work together to bring your ideas to life. Feel free to reach out through the form or the contact details below.</p>
             <hr className='text-white/50'/>
-            <p className='flex items-center gap-3'><Phone className='w-5 h-5'/>+91 8595994381, +91 9311201990</p>
-            <p className='flex items-center gap-3'><Mail className='w-5 h-5'/>codeweave1327@gmail.com</p>
+            <p className='flex items-center gap-3'>
+              <Phone className='w-5 h-5'/>
+              <a href="tel:+918595994381" className="hover:text-white/80 transition duration-300">+91 8595994381,</a>
+              <a href="tel:+919311201990" className="hover:text-white/80 transition duration-300">+91 9311201990</a>
+            </p>
+            <p className='flex items-center gap-3'>
+              <Mail className='w-5 h-5'/>
+              <a href="mailto:codeweave1327@gmail.com" className="hover:text-white/80 transition duration-300">codeweave1327@gmail.com</a>
+            </p>
           </div>
 
           <form className='bg-neutral-900 p-8 rounded-2xl space-y-4' ref={form} onSubmit={sendEmail}>
