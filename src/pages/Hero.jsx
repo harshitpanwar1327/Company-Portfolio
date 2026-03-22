@@ -1,18 +1,20 @@
-import Navigation from '../components/Navigation'
-import Footer from '../components/Footer.jsx'
-import Advertisement from '../section/Advertisement'
-import FAQ from '../section/FAQ'
-import Reviews from '../section/Reviews'
-import Products from '../section/Products'
-import About from '../section/About'
+import { lazy } from 'react'
 import { ArrowRight } from "lucide-react"
 import { useNavigate, useLocation } from "react-router-dom"
-import { scroller } from "react-scroll"
+import { scroller, Element } from "react-scroll"
 import CountUp from "react-countup"
 import { useInView } from "react-intersection-observer"
 import hero2 from "../assets/hero2.webp"
 import { Helmet } from 'react-helmet-async'
 import { motion as Motion } from 'framer-motion'
+
+const Navigation = lazy(() => import('../components/Navigation.jsx'))
+const Products = lazy(() => import('../section/Products'))
+const Reviews = lazy(() => import('../section/Reviews'))
+const About = lazy(() => import('../section/About'))
+const FAQ = lazy(() => import('../section/FAQ'))
+const Advertisement = lazy(() => import('../section/Advertisement'))
+const Footer = lazy(() => import('../components/Footer.jsx'))
 
 const Hero = () => {
   const text = "We Build Scalable SaaS \nProducts & Modern \nWeb Applications";
@@ -79,7 +81,7 @@ const Hero = () => {
         <meta property="og:url" content="https://codeweave.in/" />
       </Helmet>
     
-      <div className="w-screen min-h-[100vh] lg:min-h-[120vh] px-4 md:px-12 lg:px-20 pb-8 bg-[url(/src/assets/hero.webp)] bg-cover bg-center flex flex-col justify-between gap-16">
+      <Element name='hero' className="w-screen min-h-[100vh] lg:min-h-[120vh] px-4 md:px-12 lg:px-20 pb-8 bg-[url(/src/assets/hero.webp)] bg-cover bg-center flex flex-col justify-between gap-16">
         <Navigation />
 
         <div className="flex flex-col gap-3 text-white">
@@ -119,7 +121,7 @@ const Hero = () => {
           <p className='text-3xl'>★ ★ ★ ★ ★</p>
           <p className="text-white">15+ Positive Client Reviews</p>
         </Motion.div>
-      </div>
+      </Element>
 
       <div className="min-h-[90vh] py-20 px-4 md:px-12 lg:px-20 flex flex-col justify-center items-center gap-16" ref={ref}>
         <div className="flex flex-col lg:flex-row justify-center items-center gap-16">

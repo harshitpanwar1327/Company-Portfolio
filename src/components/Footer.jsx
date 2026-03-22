@@ -35,7 +35,7 @@ const Footer = () => {
     <div className="bg-black p-8 md:px-12 md:py-12 flex flex-col gap-8">
       <div className='grid md:grid-cols-2 gap-10'>
         <div className='flex flex-col gap-6'>
-          <h2 className="flex items-center gap-2 text-white font-semibold text-lg"><Code/> CodeWeave</h2>
+          <h2 onClick={() => handleScroll("/", "hero")} className="font-semibold flex items-center gap-1 cursor-pointer hover:opacity-70 transition-opacity duration-300 ease-in-out"><Code /> CodeWeave</h2>
           <p className="max-w-xs opacity-60 text-sm">We’re on a mission to build secure, smart, and future-ready digital solutions that empower businesses, families, and communities to thrive in a connected world.</p>
         </div>
 
@@ -62,10 +62,10 @@ const Footer = () => {
 
       <div className='flex flex-col md:flex-row items-center justify-between gap-5 px-5 text-white/80'>
         <p className='text-sm'>&copy; 2025 QweRty. All rights reserved.</p>
-        {/* <div className='flex items-center gap-4'>
+        <div className='flex items-center gap-4'>
           <NavLink to={'/privacy-policy'} className="hover:text-white transition duration-300">Privacy Policy</NavLink>
           <NavLink to={'/terms-and-conditions'} className="hover:text-white transition duration-300">Terms & Conditions</NavLink>
-        </div> */}
+        </div>
       </div>
     </div>
   )
