@@ -53,10 +53,10 @@ const Navigation = () => {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: "-100%", opacity: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="flex flex-col items-center gap-8 p-8 fixed top-0 left-0 text-black bg-white w-full z-50 md:hidden"
+            className="flex flex-col items-center gap-8 p-8 fixed top-0 left-0 text-black bg-white/95 backdrop-blur-md w-full border-b border-gray-200 z-50 md:hidden"
           >
             <div className="flex justify-between items-center w-full border-b border-gray-300 pb-4">
-              <p className="font-semibold"><Code /> CodeWeave</p>
+              <NavLink to='/' className="font-semibold"><Code /> CodeWeave</NavLink>
               <Close className="cursor-pointer" onClick={()=>setOpenNav(false)}/>
             </div>
 
@@ -64,7 +64,7 @@ const Navigation = () => {
               handleScroll("/", "products");
               setOpenNav(false);
             }}>Products</h2>
-            <Link to="reviews">Reviews</Link>
+            <Link to="reviews" onClick={() => setOpenNav(false)}>Reviews</Link>
             <h2 onClick={() => {
               handleScroll("/", "about");
               setOpenNav(false);

@@ -22,8 +22,7 @@ const BackToTopButton = () => {
 
   return (
     <button onClick={scrollToTop}
-      className={`fixed bottom-6 right-6 z-500 p-1 rounded-lg shadow-lg text-white bg-black border border-white transition-all duration-300 ${visible ? "opacity-100 scale-100" : "opacity-0 scale-75 pointer-events-none"}`}
-      aria-label="Back to top"
+      className={`fixed bottom-6 right-6 z-50 p-1 rounded-lg shadow-lg text-white bg-black hover:bg-black/90 border border-white transition duration-300 ${visible ? "opacity-100 scale-100" : "opacity-0 scale-75 pointer-events-none"}`}
     >
       <KeyboardArrowUp />
     </button>

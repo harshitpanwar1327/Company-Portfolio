@@ -2,11 +2,11 @@ import './App.css'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 import Hero from './pages/Hero.jsx'
-import BackToTopButton from './components/BackToTopButton.jsx'
 
 const Contact = lazy(() => import('./pages/Contact.jsx'))
 const TermsAndConditions = lazy(() => import('./pages/TermsAndConditions.jsx'))
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy.jsx'))
+const BackToTopButton = lazy(() => import('./components/BackToTopButton.jsx'))
 
 function App() {
   return (
