@@ -81,8 +81,8 @@ const Contact = () => {
 
           <form className='bg-neutral-900 p-8 rounded-2xl space-y-4' onSubmit={handleSubmit(onSubmit)}>
             <div className='flex flex-col gap-2'>
-              <label>Name</label>
-              <input type="text" placeholder='Jane Smith' className='w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white' required
+              <label htmlFor='name'>Name</label>
+              <input id='name' type="text" placeholder='Jane Smith' className='w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white' required
                 {...register("name", {
                   required: "Name is required",
                   pattern: {
@@ -95,8 +95,8 @@ const Contact = () => {
             </div>
 
             <div className='flex flex-col gap-2'>
-              <label>Phone</label>
-              <input type="tel" placeholder='+91 85xxxxxxxx' className='w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white' required
+              <label htmlFor='phone'>Phone</label>
+              <input id='phone' type="tel" placeholder='+91 85xxxxxxxx' className='w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white' required
                 {...register("phone", {
                   required: "Phone number is required",
                   pattern: {
@@ -109,8 +109,8 @@ const Contact = () => {
             </div>
 
             <div className='flex flex-col gap-2'>
-              <label>Message</label>
-              <textarea placeholder="Tell us about your requirements..." className="w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white" required rows={4} {...register("message")}/>
+              <label htmlFor='message'>Message</label>
+              <textarea id='message' placeholder="Tell us about your requirements..." className="w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white" required rows={4} {...register("message")}/>
             </div>
 
             <button className={`flex items-center justify-between p-1 rounded-full font-semibold w-full ${isSubmitting ? 'bg-gray-400 !cursor-not-allowed' : 'bg-white hover:bg-gray-200 group'}`}>
