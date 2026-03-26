@@ -85,7 +85,7 @@ const Hero = () => {
         <Navigation />
 
         <div className="flex flex-col gap-3 text-white">
-          <Motion.h2
+          <Motion.h1
             className="text-3xl md:text-5xl lg:text-6xl font-semibold"
             variants={container}
             initial="hidden"
@@ -96,7 +96,7 @@ const Hero = () => {
                 {letter === " " ? "\u00A0" : letter === "\n" ? <br /> : letter}
               </Motion.span>
             ))}
-          </Motion.h2>
+          </Motion.h1>
           <Motion.p className="text-lg my-6 md:w-2/3 lg:w-1/2"
             initial={{opacity: 0, y: 20}}
             animate={{opacity: 1, y: 0}}
