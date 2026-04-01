@@ -11,9 +11,9 @@ const BackToTopButton = lazy(() => import('./components/BackToTopButton.jsx'))
 function App() {
   return (
     <main>
-      <Suspense fallback={<div className='flex items-center justify-center h-screen'>Loading CodeWeave...</div>}>
+      <Suspense fallback={<div className='flex items-center justify-center w-screen text-gray-700 h-screen'>Loading CodeWeave...</div>}>
         <Routes>
-          <Route index element={<Hero />} />
+          <Route path='/' element={<Hero />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />

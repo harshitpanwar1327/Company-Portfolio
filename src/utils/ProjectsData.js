@@ -1,35 +1,32 @@
-import QweRty from '../assets/QweRty.mp4'
-import DBS from '../assets/DBS.mp4'
-import RealEstate from '../assets/RealEstate.mp4'
-import DailySpend from '../assets/DailySpend.mp4'
+import * as Icons from '../assets/products'
 
 export const ProjectsData = [
     {
         id: 1,
         title: "QweRty",
-        description: "A customizable QR code generator that bridges physical and digital experiences through dynamic and brand-focused QR solutions.",
-        video: QweRty,
+        description: "A next-generation QR code platform designed for individuals and businesses. Create dynamic, customizable, and brand-focused QR codes to seamlessly connect offline and online experiences.",
+        images: [Icons.QweRty1, Icons.QweRty2, Icons.QweRty3, Icons.QweRty4, Icons.QweRty5],
         link: 'https://www.codeweaveqwerty.site'
     },
     {
         id: 2,
-        title: "Data Block Solution",
-        description: "System software to prevent data transfer and restrict unauthorized activities with real-time monitoring.",
-        video: DBS,
-        link: 'https://www.protectionmark.com'
+        title: "Daily Spend",
+        description: "A simple and intuitive expense tracking web application that helps users manage daily spending, gain financial clarity, and build better money habits effortlessly.",
+        images: [Icons.DailySpend1, Icons.DailySpend2, Icons.DailySpend3, Icons.DailySpend4, Icons.DailySpend5, Icons.DailySpend6, Icons.DailySpend7],
+        link: ''
     },
     {
         id: 3,
-        title: "Real Estate Website",
-        description: "A modern real estate platform with property listings, admin dashboard, and contact integration.",
-        video: RealEstate,
+        title: "Classezo",
+        description: "An all-in-one coaching center management software to streamline student records, fees, attendance, and operations, helping institutes run efficiently and grow faster.",
+        images: [Icons.Classezo1, Icons.Classezo2, Icons.Classezo3],
         link: ""
     },
     {
         id: 4,
-        title: "Daily Spend Website",
-        description: "A modern and responsive landing page for the Daily Spend app, showcasing features for tracking daily expenses with clarity and simplicity.",
-        video: DailySpend,
-        link: "https://dailyspend.in"
+        title: "Website Services",
+        description: "Get a modern, responsive, and high-performing website at a minimal cost. Perfect for startups and small businesses looking to establish a strong online presence with premium service.",
+        images: [Icons.Omega1, Icons.Omega2, Icons.Omega3],
+        link: "https://omegatutorials.in"
     }
 ]
