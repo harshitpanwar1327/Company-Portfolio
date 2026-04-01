@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
-import omegaProfile from '../assets/reviews/omegaProfile.jpg'
-// import dailyspendProfile from '../assets/reviews/dailyspendProfile.png'
+// import omegaProfile from '../assets/reviews/omegaProfile.jpg'
+import dailyspendProfile from '../assets/reviews/dailyspendProfile.png'
 import { Element } from 'react-scroll'
 
 const reviewsData = [
@@ -8,13 +8,13 @@ const reviewsData = [
     text: "Working with CodeWeave on DailySpend has been a great experience. Their approach to development is very structured, and they focus a lot on user experience and performance. The team was proactive, communicated clearly, and ensured every feature was built with precision. Overall, the collaboration was smooth and professional.",
     name: "Kirti Ahlawat",
     role: "CEO & Founder, DailySpend",
-    img: omegaProfile,
+    img: dailyspendProfile,
   },
   // {
   //   text: "We got our coaching institute website developed by CodeWeave, and the experience was smooth from start to finish. They understood our requirements clearly and delivered a clean, professional website that perfectly represents Omega Tutorials. The team was responsive, made quick changes whenever needed, and delivered on time. Highly recommended for anyone looking for quality website services at a reasonable price.",
   //   name: "Yogesh Kumar",
   //   role: "Director, Omega Tutorials",
-  //   img: dailyspendProfile,
+  //   img: omegaProfile,
   // }
 ];
 
