@@ -1,4 +1,5 @@
 import { lazy } from 'react'
+import { Helmet } from 'react-helmet-async'
 
 const Footer = lazy(() => import('../components/Footer.jsx'))
 const ScrollToTop = lazy(() => import('../components/ScrollToTop.jsx'))
@@ -6,6 +7,29 @@ const ScrollToTop = lazy(() => import('../components/ScrollToTop.jsx'))
 const PrivacyPolicy = () => {
   return (
     <>
+      <Helmet>
+        <title>Privacy Policy | CodeWeave</title>
+        <meta name="description" content="Read the Privacy Policy of CodeWeave to understand how we collect, use, and protect your personal data while using our SaaS and web development services." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://codeweave.in/privacy-policy" />
+        <meta property="og:title" content="Privacy Policy | CodeWeave" />
+        <meta property="og:description" content="Learn how CodeWeave handles your data and protects your privacy." />
+        <meta property="og:url" content="https://codeweave.in/privacy-policy" />
+        <meta property="og:type" content="article" />
+        <script type="application/ld+json">
+          {`{
+            "@context": "https://schema.org",
+            "@type": "PrivacyPolicy",
+            "name": "Privacy Policy",
+            "url": "https://codeweave.in/privacy-policy",
+            "publisher": {
+              "@type": "Organization",
+              "name": "CodeWeave"
+            }
+          }`}
+        </script>
+      </Helmet>
+
       <ScrollToTop />
 
       <div className='px-4 md:px-8 py-12 lg:py-24 max-w-6xl mx-auto flex flex-col gap-8 text-black'>

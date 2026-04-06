@@ -1,4 +1,5 @@
 import { lazy } from 'react'
+import { Helmet } from 'react-helmet-async'
 
 const Footer = lazy(() => import('../components/Footer.jsx'))
 const ScrollToTop = lazy(() => import('../components/ScrollToTop.jsx'))
@@ -6,6 +7,32 @@ const ScrollToTop = lazy(() => import('../components/ScrollToTop.jsx'))
 const TermsAndConditions = () => {
   return (
     <>
+      <Helmet>
+        <title>Terms & Conditions | CodeWeave</title>
+        <meta name="description" content="Read the Terms and Conditions of CodeWeave to understand the rules, policies, and guidelines for using our SaaS development and web application services." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://codeweave.in/terms-and-conditions" />
+        <meta property="og:title" content="Terms & Conditions | CodeWeave" />
+        <meta property="og:description" content="Understand the terms and policies for using CodeWeave services." />
+        <meta property="og:url" content="https://codeweave.in/terms-and-conditions" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Terms & Conditions | CodeWeave" />
+        <meta name="twitter:description" content="Read CodeWeave terms for using SaaS and web development services." />
+        <script type="application/ld+json">
+          {`{
+            "@context": "https://schema.org",
+            "@type": "TermsOfService",
+            "name": "Terms and Conditions",
+            "url": "https://codeweave.in/terms-and-conditions",
+            "publisher": {
+              "@type": "Organization",
+              "name": "CodeWeave"
+            }
+          }`}
+        </script>
+      </Helmet>
+
       <ScrollToTop />
 
       <div className='px-4 md:px-8 py-12 lg:py-24 max-w-6xl mx-auto flex flex-col gap-8 text-black'>

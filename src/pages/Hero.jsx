@@ -73,12 +73,25 @@ const Hero = () => {
   return (
     <>
       <Helmet>
-        <title>CodeWeave | SaaS Development Agency for Startups</title>
-        <meta name="description" content="CodeWeave builds scalable SaaS products, ERP systems, and custom web applications. Creators of ClassEzo, Daily Spend, and QweRty." />
-        <meta name="keywords" content="SaaS development, ERP software, web app development, startup tech partner" />
-        <meta property="og:title" content="CodeWeave | SaaS Development Agency" />
-        <meta property="og:description" content="We build scalable SaaS and web applications for startups and businesses." />
+        <title>SaaS Development Company in India | CodeWeave</title>
+        <meta name="description" content="CodeWeave is a SaaS development company building scalable web applications, ERP systems, and custom software for startups and businesses." />
+        <link rel="canonical" href="https://codeweave.in/" />
+        <meta property="og:title" content="CodeWeave | SaaS Development Company" />
+        <meta property="og:description" content="We build SaaS platforms, ERP systems, and scalable web applications for startups and businesses." />
         <meta property="og:url" content="https://codeweave.in/" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {`{
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "CodeWeave",
+            "url": "https://codeweave.in",
+            "logo": "https://codeweave.in/favicon.png",
+            "sameAs": [],
+            "areaServed": "IN",
+            "description": "SaaS development company in India building scalable web applications and ERP systems."
+          }`}
+        </script>
       </Helmet>
     
       <Element name='hero' className="w-screen min-h-[100vh] lg:min-h-[120vh] px-4 md:px-12 lg:px-20 pb-8 bg-[url(/src/assets/hero.webp)] bg-cover bg-center flex flex-col justify-between gap-16">
@@ -131,7 +144,7 @@ const Hero = () => {
               and services that empower businesses and individuals to grow in the digital era.
             </span>
           </h2>
-          <img src={hero2} alt="Coach" className="rounded-xl shadow-lg w-full max-w-md"/>
+          <img src={hero2} alt="SaaS development company building web applications" className="rounded-xl shadow-lg w-full max-w-md"/>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-16 text-center">

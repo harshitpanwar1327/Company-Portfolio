@@ -54,9 +54,33 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact CodeWeave | Start Your SaaS Project</title>
-        <meta name="description" content="Contact CodeWeave to build your SaaS product, ERP system, or custom web application. Let's turn your idea into reality." />
-        <meta name="robots" content="index, follow" />
+        <title>Contact CodeWeave | Hire SaaS Developers & Web App Experts</title>
+        <meta name="description" content="Contact CodeWeave to build your SaaS product, ERP system, or custom web application. Hire expert developers in India and turn your idea into a scalable digital product." />
+        <meta name="keywords" content="contact CodeWeave, hire SaaS developers India, web development company contact, ERP software developers India, startup tech partner India" />
+        <link rel="canonical" href="https://codeweave.in/contact" />
+        <meta property="og:title" content="Contact CodeWeave | Start Your SaaS Project" />
+        <meta property="og:description" content="Get in touch with CodeWeave to build scalable SaaS products, ERP systems, and web applications." />
+        <meta property="og:url" content="https://codeweave.in/contact" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact CodeWeave" />
+        <meta name="twitter:description" content="Hire SaaS developers and build your next product with CodeWeave." />
+        <script type="application/ld+json">
+          {`{
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact CodeWeave",
+            "url": "https://codeweave.in/contact",
+            "description": "Contact CodeWeave for SaaS development, ERP solutions, and custom web applications.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-8595994381",
+              "contactType": "customer support",
+              "areaServed": "IN",
+              "availableLanguage": ["English", "Hindi"]
+            }
+          }`}
+        </script>
       </Helmet>
 
       <Element name='contact' className='relative w-screen px-4 md:px-12 lg:px-20 pb-8 bg-black overflow-hidden flex flex-col justify-between gap-16'>
