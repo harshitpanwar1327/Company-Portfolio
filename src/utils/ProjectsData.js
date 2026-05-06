@@ -12,7 +12,7 @@ export const ProjectsData = [
         id: 2,
         title: "Daily Spend",
         description: "A simple and intuitive expense tracking web application that helps users manage daily spending, gain financial clarity, and build better money habits effortlessly.",
-        images: [Icons.DailySpend1, Icons.DailySpend2, Icons.DailySpend3, Icons.DailySpend4, Icons.DailySpend5, Icons.DailySpend6, Icons.DailySpend7],
+        images: [Icons.DailySpend1, Icons.DailySpend2, Icons.DailySpend3, Icons.DailySpend4],
         link: 'https://www.dailyspend.in'
     },
     {

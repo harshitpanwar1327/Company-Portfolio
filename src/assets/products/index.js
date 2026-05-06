@@ -12,9 +12,6 @@ export { default as DailySpend1 } from "./DailySpend1.png";
 export { default as DailySpend2 } from "./DailySpend2.png";
 export { default as DailySpend3 } from "./DailySpend3.png";
 export { default as DailySpend4 } from "./DailySpend4.png";
-export { default as DailySpend5 } from "./DailySpend5.png";
-export { default as DailySpend6 } from "./DailySpend6.png";
-export { default as DailySpend7 } from "./DailySpend7.png";
 
 export { default as Classezo1 } from "./Classezo1.png";
 export { default as Classezo2 } from "./Classezo2.png";
