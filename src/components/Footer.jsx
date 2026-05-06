@@ -61,7 +61,7 @@ const Footer = () => {
       <hr className="text-gray-700!" />
 
       <div className='flex flex-col md:flex-row items-center justify-between gap-5 px-5 text-white/80'>
-        <p className='text-sm'>&copy; 2025 QweRty. All rights reserved.</p>
+        <p className='text-sm'>&copy; 2026 CodeWeave. All rights reserved.</p>
         <div className='flex items-center gap-4'>
           <NavLink to={'/privacy-policy'} className="hover:text-white transition duration-300">Privacy Policy</NavLink>
           <NavLink to={'/terms-and-conditions'} className="hover:text-white transition duration-300">Terms & Conditions</NavLink>

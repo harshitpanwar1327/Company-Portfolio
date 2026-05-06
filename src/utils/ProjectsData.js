@@ -13,7 +13,7 @@ export const ProjectsData = [
         title: "Daily Spend",
         description: "A simple and intuitive expense tracking web application that helps users manage daily spending, gain financial clarity, and build better money habits effortlessly.",
         images: [Icons.DailySpend1, Icons.DailySpend2, Icons.DailySpend3, Icons.DailySpend4, Icons.DailySpend5, Icons.DailySpend6, Icons.DailySpend7],
-        link: ''
+        link: 'https://www.dailyspend.in'
     },
     {
         id: 3,
@@ -27,6 +27,6 @@ export const ProjectsData = [
         title: "Website Services",
         description: "Get a modern, responsive, and high-performing website at a minimal cost. Perfect for startups and small businesses looking to establish a strong online presence with premium service.",
         images: [Icons.Omega1, Icons.Omega2, Icons.Omega3],
-        link: "https://omegatutorials.in"
+        link: ""
     }
 ]

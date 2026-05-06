@@ -135,9 +135,9 @@ const PrivacyPolicy = () => {
             </p>
             <p>
               📞 Phone:{" "}
-              <a href="tel:+918595994381" className="text-blue-600">+91 8595994381</a>
+              <a href="tel:+918595901990" className="text-blue-600">+91 8595901990</a>
               ,{" "}
-              <a href="tel:+919311201990" className="text-blue-600">+91 9311201990</a>
+              <a href="tel:+918595994381" className="text-blue-600">+91 8595994381</a>
             </p>
           </div>
         </section>

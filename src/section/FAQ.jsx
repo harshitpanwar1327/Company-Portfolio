@@ -73,9 +73,9 @@ const FAQ = () => {
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="mt-2 text-gray-600"
+                  className="text-gray-600 overflow-y-auto"
                 >
-                  {faq.answer}
+                  <div className="mt-2">{faq.answer}</div>
                 </Motion.p>
               )}
             </AnimatePresence>

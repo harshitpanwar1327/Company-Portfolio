@@ -83,7 +83,7 @@ const Contact = () => {
         </script>
       </Helmet>
 
-      <Element name='contact' className='relative w-screen px-4 md:px-12 lg:px-20 pb-8 bg-black overflow-hidden flex flex-col justify-between gap-16'>
+      <Element name='contact' className='relative w-screen min-h-screen px-4 md:px-12 lg:px-20 pb-16 bg-black overflow-hidden flex flex-col justify-between gap-16'>
         <Navigation />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 text-white">
@@ -94,8 +94,8 @@ const Contact = () => {
             <hr className='text-white/50'/>
             <p className='flex items-center gap-3'>
               <Phone className='w-5 h-5'/>
-              <a href="tel:+918595994381" className="hover:text-white/80 transition duration-300">+91 8595994381,</a>
-              <a href="tel:+919311201990" className="hover:text-white/80 transition duration-300">+91 9311201990</a>
+              <a href="tel:+918595901990" className="hover:text-white/80 transition duration-300">+91 8595901990</a>
+              <a href="tel:+918595994381" className="hover:text-white/80 transition duration-300">+91 8595994381</a>
             </p>
             <p className='flex items-center gap-3'>
               <Mail className='w-5 h-5'/>
@@ -106,7 +106,7 @@ const Contact = () => {
           <form className='bg-neutral-900 p-8 rounded-2xl space-y-4' onSubmit={handleSubmit(onSubmit)}>
             <div className='flex flex-col gap-2'>
               <label htmlFor='name'>Name</label>
-              <input id='name' type="text" placeholder='Jane Smith' className='w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white' required
+              <input id='name' type="text" placeholder='Jane Smith' className='w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white'
                 {...register("name", {
                   required: "Name is required",
                   pattern: {
@@ -120,7 +120,7 @@ const Contact = () => {
 
             <div className='flex flex-col gap-2'>
               <label htmlFor='phone'>Phone</label>
-              <input id='phone' type="tel" placeholder='+91 85xxxxxxxx' className='w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white' required
+              <input id='phone' type="tel" placeholder='+91 85xxxxxxxx' className='w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white'
                 {...register("phone", {
                   required: "Phone number is required",
                   pattern: {
@@ -134,7 +134,11 @@ const Contact = () => {
 
             <div className='flex flex-col gap-2'>
               <label htmlFor='message'>Message</label>
-              <textarea id='message' placeholder="Tell us about your requirements..." className="w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white" required rows={4} {...register("message")}/>
+              <textarea id='message' placeholder="Tell us about your requirements..." className="w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white" rows={4}
+                {...register("message", {
+                  required: "Message is required"
+                })}
+              />
             </div>
 
             <button className={`flex items-center justify-between p-1 rounded-full font-semibold w-full ${isSubmitting ? 'bg-gray-400 !cursor-not-allowed' : 'bg-white hover:bg-gray-200 group'}`}>
