@@ -106,7 +106,7 @@ const Contact = () => {
           <form className='bg-neutral-900 p-8 rounded-2xl space-y-4' onSubmit={handleSubmit(onSubmit)}>
             <div className='flex flex-col gap-2'>
               <label htmlFor='name'>Name</label>
-              <input id='name' type="text" placeholder='Jane Smith' className='w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white'
+              <input id='name' type="text" placeholder='e.g., Jane Smith' className='w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white'
                 {...register("name", {
                   required: "Name is required",
                   pattern: {
@@ -120,7 +120,7 @@ const Contact = () => {
 
             <div className='flex flex-col gap-2'>
               <label htmlFor='phone'>Phone</label>
-              <input id='phone' type="tel" placeholder='+91 85xxxxxxxx' className='w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white'
+              <input id='phone' type="tel" placeholder='e.g., 8595994381' className='w-full p-3 rounded-lg bg-neutral-800 text-white focus:outline-none focus:ring-1 focus:ring-white'
                 {...register("phone", {
                   required: "Phone number is required",
                   pattern: {
