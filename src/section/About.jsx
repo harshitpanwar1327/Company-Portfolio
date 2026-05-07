@@ -6,7 +6,7 @@ import productEngineerImg from '../assets/about3.webp'
 
 const About = () => {
   return (
-    <Element name='about' className='bg-black text-white flex flex-col justify-center items-center gap-8 md:gap-16 py-16 md:py-24 px-4'>
+    <Element name='about' className='bg-black text-white flex flex-col justify-center items-center gap-8 md:gap-16 py-16 md:py-24 px-4 md:px-12 lg:px-20'>
       <div className='max-w-4xl text-center space-y-6'>
         <h2 className='text-4xl md:text-5xl font-bold'>About Code Weave</h2>
         <p className='text-lg text-white/80 leading-relaxed'>

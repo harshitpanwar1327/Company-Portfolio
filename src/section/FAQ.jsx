@@ -53,7 +53,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="py-16 md:py-24 px-4 text-black flex flex-col gap-8 md:gap-16 max-w-6xl mx-auto">
+    <div className="py-16 md:py-24 px-4 md:px-12 lg:px-20 text-black flex flex-col gap-8 md:gap-16">
       <h2 className="text-3xl md:text-5xl font-semibold text-center mb-8">Everything you need to know</h2>
       <div className="flex flex-col gap-10">
         {faqs.map((faq, index) => (

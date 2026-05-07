@@ -136,7 +136,7 @@ const Hero = () => {
         </Motion.div>
       </Element>
 
-      <div className="flex flex-col justify-center items-center gap-16 py-16 md:py-24 px-4 max-w-7xl mx-auto" ref={ref}>
+      <div className="flex flex-col justify-center items-center gap-16 py-16 md:py-24 px-4 md:px-12 lg:px-20" ref={ref}>
         <div className="flex flex-col lg:flex-row justify-center items-center gap-16">
           <h2 className="text-2xl lg:text-3xl font-semibold text-black">
             From secure data solutions to modern web platforms, we build innovative digital products{" "}

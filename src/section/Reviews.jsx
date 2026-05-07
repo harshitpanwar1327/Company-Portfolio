@@ -35,7 +35,7 @@ const Reviews = () => {
   const { text, name, role} = reviewsData[currentIndex];
 
   return (
-    <Element name="reviews" className="flex flex-col items-center justify-center gap-8 md:gap-16 py-16 md:py-24 px-4 bg-white">
+    <Element name="reviews" className="flex flex-col items-center justify-center gap-8 md:gap-16 py-16 md:py-24 px-4 md:px-12 lg:px-20 bg-white">
       <h2 className='text-black text-5xl font-semibold text-center'>What Our Clients Say</h2>
 
       <div className="flex flex-col items-center gap-4">
