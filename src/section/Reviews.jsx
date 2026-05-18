@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
-// import omegaProfile from '../assets/reviews/omegaProfile.jpg'
+import omegaProfile from '../assets/reviews/omegaProfile.jpg'
 import dailyspendProfile from '../assets/reviews/dailyspendProfile.png'
+import outectProfile from '../assets/reviews/outectProfile.png'
 import { Element } from 'react-scroll'
 
 const reviewsData = [
@@ -10,12 +11,18 @@ const reviewsData = [
     role: "CEO & Founder, DailySpend",
     img: dailyspendProfile,
   },
-  // {
-  //   text: "We got our coaching institute website developed by CodeWeave, and the experience was smooth from start to finish. They understood our requirements clearly and delivered a clean, professional website that perfectly represents Omega Tutorials. The team was responsive, made quick changes whenever needed, and delivered on time. Highly recommended for anyone looking for quality website services at a reasonable price.",
-  //   name: "Yogesh Kumar",
-  //   role: "Director, Omega Tutorials",
-  //   img: omegaProfile,
-  // }
+  {
+    text: "We are extremely satisfied with the services provided by Codeweave Company. They designed a professional, modern, and user-friendly website for Omega Tutorials exactly according to our requirements. Their team was cooperative, creative, and always ready to make changes whenever needed. The website perfectly represents our institute and has helped improve our online presence. We truly appreciate their dedication, timely support, and quality work. Highly recommended for anyone looking for reliable web development services!",
+    name: "Yogesh Kumar",
+    role: "Director, Omega Tutorials",
+    img: omegaProfile,
+  },
+  {
+    text: "We partnered with CodeWeave for the development of the Outect website, and the experience was excellent from start to finish. Their team understood our vision quickly and transformed it into a modern, responsive, and professionally designed website that perfectly represents our brand. The attention to detail, smooth communication, and fast delivery really stood out. I’d highly recommend CodeWeave to any startup or business looking for high-quality web development services.",
+    name: "Shashank Panwar",
+    role: "Founder & CTO, Outect",
+    img: outectProfile,
+  }
 ];
 
 const Reviews = () => {

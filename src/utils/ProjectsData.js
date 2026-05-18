@@ -26,7 +26,7 @@ export const ProjectsData = [
         id: 4,
         title: "Website Services",
         description: "Get a modern, responsive, and high-performing website at a minimal cost. Perfect for startups and small businesses looking to establish a strong online presence with premium service.",
-        images: [Icons.Omega1, Icons.Omega2, Icons.Omega3],
+        images: [Icons.Omega, Icons.TheLearningEdges, Icons.Outect],
         link: ""
     }
 ]

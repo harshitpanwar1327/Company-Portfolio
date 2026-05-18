@@ -4,9 +4,11 @@ import { lazy, Suspense } from 'react'
 import Hero from './pages/Hero.jsx'
 
 const Contact = lazy(() => import('./pages/Contact.jsx'))
+const Work = lazy(() => import('./pages/Work.jsx'))
 const TermsAndConditions = lazy(() => import('./pages/TermsAndConditions.jsx'))
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy.jsx'))
 const BackToTopButton = lazy(() => import('./components/BackToTopButton.jsx'))
+const SocialLinks = lazy(()=> import('./components/SocialLinks.jsx'));
 
 function App() {
   return (
@@ -15,12 +17,14 @@ function App() {
         <Routes>
           <Route path='/' element={<Hero />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/work' element={<Work />} />
           <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
 
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
 
+        <SocialLinks />
         <BackToTopButton />
       </Suspense>
     </main>

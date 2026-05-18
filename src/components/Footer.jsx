@@ -44,16 +44,18 @@ const Footer = () => {
             <h3 className="text-white font-semibold">Quick Links</h3>
             <p onClick={() => handleScroll("/hero", "about")} className='w-fit cursor-pointer hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-4'>About</p>
             <p onClick={() => handleScroll("/hero", "products")} className='w-fit cursor-pointer hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-7'>Products</p>
-            <Link to='reviews' className='w-fit cursor-pointer hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-10'>Reviews</Link>
-            <p onClick={() => handleScroll("/contact", "contact")} className='w-fit cursor-pointer hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-13'>Contact</p>
+            <p onClick={() => handleScroll("/work", "work")} className='w-fit cursor-pointer hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-10'>Work</p>
+            <Link to='reviews' className='w-fit cursor-pointer hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-13'>Reviews</Link>
+            <p onClick={() => handleScroll("/contact", "contact")} className='w-fit cursor-pointer hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-16'>Contact</p>
           </div>
 
           <div className='flex flex-col gap-2'>
             <h3 className="text-white font-semibold">Socials</h3>
-            <a href="mailto:codeweave1327@gmail.com" target='_blank' rel="noopener noreferrer" className='w-fit hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-3'>Gmail</a>
-            <a href="https://www.linkedin.com/company/codeweave1327/" target='_blank' rel="noopener noreferrer" className='w-fit hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-6'>LinkedIn</a>
-            <a href="https://www.youtube.com/channel/UCdL7XtgIMC64BQ4SpZ8qWDA" target='_blank' rel="noopener noreferrer" className='w-fit hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-9'>YouTube</a>
-            <a href="https://www.instagram.com/codeweave1327/" target='_blank' rel="noopener noreferrer" className='w-fit hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-12'>Instagram</a>
+            <a href="mailto:codeweave1327@gmail.com" target='_blank' rel="noopener noreferrer" className='w-fit hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-5'>Gmail</a>
+            <a href="https://www.linkedin.com/company/codeweave1327/" target='_blank' rel="noopener noreferrer" className='w-fit hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-8'>LinkedIn</a>
+            <a href="https://www.youtube.com/channel/UCdL7XtgIMC64BQ4SpZ8qWDA" target='_blank' rel="noopener noreferrer" className='w-fit hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-11'>YouTube</a>
+            <a href="https://www.instagram.com/codeweave1327/" target='_blank' rel="noopener noreferrer" className='w-fit hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-14'>Instagram</a>
+            <a href="https://wa.me/918595901990?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20services." target='_blank' rel="noopener noreferrer" className='w-fit hover:text-white relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-17'>Whatsapp</a>
           </div>
         </div>
       </div>

@@ -40,6 +40,7 @@ const Navigation = () => {
       <span className="text-2xl opacity-40 hidden md:inline">|</span>
 
       <h2 onClick={()=>handleScroll("/", "products")} className="hidden md:block relative py-2 cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Products</h2>
+      <h2 onClick={()=>handleScroll("/work", "work")} className="hidden md:block relative py-2 cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Work</h2>
       <Link to="reviews" className="hidden md:block relative py-2 cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Reviews</Link>
       <h2 onClick={()=>handleScroll("/", "about")} className="hidden md:block relative py-2 cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About</h2>
       <h2 onClick={()=>handleScroll("/contact", "contact")} className="hidden md:block relative py-2 cursor-pointer after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Contact</h2>
@@ -64,6 +65,10 @@ const Navigation = () => {
               handleScroll("/", "products");
               setOpenNav(false);
             }}>Products</h2>
+            <h2 onClick={() => {
+              handleScroll("/work", "work");
+              setOpenNav(false);
+            }}>Work</h2>
             <Link to="reviews" onClick={() => setOpenNav(false)}>Reviews</Link>
             <h2 onClick={() => {
               handleScroll("/", "about");
