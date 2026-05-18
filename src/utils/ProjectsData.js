@@ -21,12 +21,5 @@ export const ProjectsData = [
         description: "An all-in-one coaching center management software to streamline student records, fees, attendance, and operations, helping institutes run efficiently and grow faster.",
         images: [Icons.Classezo1, Icons.Classezo2, Icons.Classezo3],
         link: ""
-    },
-    {
-        id: 4,
-        title: "Website Services",
-        description: "Get a modern, responsive, and high-performing website at a minimal cost. Perfect for startups and small businesses looking to establish a strong online presence with premium service.",
-        images: [Icons.Omega, Icons.TheLearningEdges, Icons.Outect],
-        link: ""
     }
 ]
