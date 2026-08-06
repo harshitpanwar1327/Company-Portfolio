@@ -6,6 +6,7 @@ import { motion as Motion } from 'framer-motion'
 import { Helmet } from 'react-helmet-async'
 
 const Navigation = lazy(() => import('../components/Navigation.jsx'))
+const Reviews = lazy(() => import('../section/Reviews'))
 const Advertisement = lazy(()=>import('../section/Advertisement'))
 const Footer = lazy(() => import('../components/Footer.jsx'))
 
@@ -30,6 +31,13 @@ const projects = [
     webLink: "https://www.thelearningedges.in/",
     desc: "Built a professional coaching center website with advanced SEO, responsive layouts, optimized performance, and a modern design tailored for student engagement and lead generation.",
     image: Images.Project3,
+  },
+  {
+    tag: "Web Application",
+    title: "Hospitality Management System",
+    webLink: "https://harshitpanwar1327.github.io/Hospitality-Management-System/",
+    desc: "Developed a comprehensive hospitality management system to streamline hotel operations, including room booking, guest management, billing, staff administration, and real-time reporting with a responsive and user-friendly interface.",
+    image: Images.Project4,
   },
 ];
 
@@ -111,10 +119,10 @@ const Work = () => {
         </div>
       </Element>
 
-      <section className="grid lg:grid-cols-2 gap-8 py-12 lg:py-24 px-4 lg:px-16">
+      <section className="grid lg:grid-cols-2 gap-8 py-12 lg:py-24 px-4 lg:px-16 bg-gray-50">
         {projects.map((project) => (
           <div key={project.title} className="flex flex-col gap-4 rounded-3xl p-4 border border-gray-200 hover:-translate-y-1 hover:shadow-[0_15px_45px_hsl(243_75%_59%/0.15)] transition duration-300">
-            <img src={project.image} loading="lazy" decoding="async" alt={project.title} className="w-full h-full object-cover"/>
+            <img src={project.image} loading="lazy" decoding="async" alt={project.title} className="w-full object-cover"/>
 
             <div className="flex flex-col gap-4 p-4">
               <span className="text-xs font-medium uppercase tracking-wider text-[#5048E5]">{project.tag}</span>
@@ -131,6 +139,7 @@ const Work = () => {
         ))}
       </section>
 
+      <Reviews />
       <Advertisement />
       <Footer />
     </>

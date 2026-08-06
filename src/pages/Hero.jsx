@@ -149,7 +149,7 @@ const Hero = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-16 text-center">
           <div>
-            <h3 className="text-4xl font-bold text-black">{inView && <CountUp end={1.5} duration={2} />}</h3>
+            <h3 className="text-4xl font-bold text-black">{inView && <CountUp end={1.5} duration={2} />}+</h3>
             <p className="text-gray-600 mt-2">Years of Innovation</p>
           </div>
           <div>
@@ -161,7 +161,7 @@ const Hero = () => {
             <p className="text-gray-600 mt-2">Happy Clients</p>
           </div>
           <div>
-            <h3 className="text-4xl font-bold text-black">{inView && <CountUp end={5000} duration={3.5} separator="," />}+</h3>
+            <h3 className="text-4xl font-bold text-black">{inView && <CountUp end={7200} duration={3.5} separator="," />}+</h3>
             <p className="text-gray-600 mt-2">Hours of Development</p>
           </div>
         </div>

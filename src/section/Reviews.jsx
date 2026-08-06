@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react"
-import omegaProfile from '../assets/reviews/omegaProfile.jpg'
-import dailyspendProfile from '../assets/reviews/dailyspendProfile.png'
-import outectProfile from '../assets/reviews/outectProfile.png'
+import * as Icons from '../assets/reviews'
 import { Element } from 'react-scroll'
 
 const reviewsData = [
@@ -9,19 +7,31 @@ const reviewsData = [
     text: "Working with CodeWeave on DailySpend has been a great experience. Their approach to development is very structured, and they focus a lot on user experience and performance. The team was proactive, communicated clearly, and ensured every feature was built with precision. Overall, the collaboration was smooth and professional.",
     name: "Kirti Ahlawat",
     role: "CEO & Founder, DailySpend",
-    img: dailyspendProfile,
+    img: Icons.Review1,
   },
   {
     text: "We are extremely satisfied with the services provided by Codeweave Company. They designed a professional, modern, and user-friendly website for Omega Tutorials exactly according to our requirements. Their team was cooperative, creative, and always ready to make changes whenever needed. The website perfectly represents our institute and has helped improve our online presence. We truly appreciate their dedication, timely support, and quality work. Highly recommended for anyone looking for reliable web development services!",
     name: "Yogesh Kumar",
     role: "Director, Omega Tutorials",
-    img: omegaProfile,
+    img: Icons.Review2,
   },
   {
     text: "We partnered with CodeWeave for the development of the Outect website, and the experience was excellent from start to finish. Their team understood our vision quickly and transformed it into a modern, responsive, and professionally designed website that perfectly represents our brand. The attention to detail, smooth communication, and fast delivery really stood out. I’d highly recommend CodeWeave to any startup or business looking for high-quality web development services.",
     name: "Shashank Panwar",
     role: "Founder & CTO, Outect",
-    img: outectProfile,
+    img: Icons.Review3,
+  },
+  {
+    text: "CodeWeave developed a comprehensive Hospitality Management System for our organization that has significantly streamlined our daily operations. From reservations and guest management to billing and reporting, every module was thoughtfully designed and easy to use. Their team demonstrated strong technical expertise, delivered the project on time, and provided excellent support throughout the development process. We highly recommend CodeWeave for custom software development.",
+    name: "Rishabh Chaudhary",
+    role: "Director, RC Groups",
+    img: Icons.Review4,
+  },
+  {
+    text: "CodeWeave created a modern, responsive, and SEO-friendly website for The Learning Edges Academy that truly reflects our vision and values. Their team understood our requirements perfectly and delivered a clean, fast, and professional website that has improved our online presence and made it easier for students and parents to connect with us. Their communication, creativity, and commitment to quality made the entire experience outstanding.",
+    name: "Ashish Shah",
+    role: "Director, The Learning Edges Academy",
+    img: Icons.Review5,
   }
 ];
 

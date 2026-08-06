@@ -6,7 +6,7 @@ export const ProjectsData = [
         title: "QweRty",
         description: "A next-generation QR code platform designed for individuals and businesses. Create dynamic, customizable, and brand-focused QR codes to seamlessly connect offline and online experiences.",
         images: [Icons.QweRty1, Icons.QweRty2, Icons.QweRty3, Icons.QweRty4, Icons.QweRty5],
-        link: 'https://www.codeweaveqwerty.site'
+        link: 'https://www.qwertyqr.in'
     },
     {
         id: 2,
